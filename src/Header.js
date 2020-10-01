@@ -6,6 +6,7 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 
 function Header() {
     return (
+        // display logo, search bar, signin, ... item in header 
         <div className='header'>
 
             <img className='header__logo' src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"></img>
