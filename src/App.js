@@ -3,13 +3,28 @@ import React from 'react';
 import './App.css';
 import Header from './Header'
 import Home from './Home'
+import {
+  BrowserRouter as Router, Switch, Route
+} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Home />
-    </div>
+    <Router>
+      <div className="app">
+        {/* header is common for all pages */}
+        <Header />
+        <Switch>
+          {/* /checkout route is for only checking checkout */}
+          <Route path="/checkout">
+            <h1>This is checkout, BOOM</h1>
+          </Route>
+          {/* it is for default route */}
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
