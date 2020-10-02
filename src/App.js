@@ -7,20 +7,25 @@ import Checkout from './Checkout'
 import {
   BrowserRouter as Router, Switch, Route
 } from 'react-router-dom';
+import Login from './Login';
 
 function App() {
   return (
     <Router>
       <div className="app">
-        {/* header is common for all pages */}
-        <Header />
         <Switch>
+          {/* it is for user login */}
+          <Route path="/login">
+            <Login />
+          </Route>
           {/* /checkout route is for only checking checkout */}
           <Route path="/checkout">
+            <Header />
             <Checkout />
           </Route>
           {/* it is for default route */}
           <Route path="/">
+            <Header />
             <Home />
           </Route>
         </Switch>
