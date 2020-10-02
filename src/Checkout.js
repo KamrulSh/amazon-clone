@@ -1,20 +1,46 @@
 import React from 'react'
 import './Checkout.css'
-import './Subtotal'
+import CheckoutProduct from './CheckoutProduct'
+import { useStateValue } from './StateProvider'
 import Subtotal from './Subtotal'
 
 function Checkout() {
+    const [{ basket }, dispatch] = useStateValue();
+    console.log("basket test", basket);
     return (
         <div className="checkout">
             <div className="checkout__left">
                 <img className="checkout__ad" src="https://images-na.ssl-images-amazon.com/images/G/01/gift-certificates/consumer/2020/3rd/GCapp/bgc_banner_update_ap_EN_1024x90_20200807.jpg" alt=""></img>
 
-                <div className="checkout__title">
-                    <h1>Shopping Cart</h1>
-                    {/* BasketItem */}
-                    {/* BasketItem */}
-                    {/* BasketItem */}
-                    {/* BasketItem */}
+                <div>
+                    <h1 className="checkout__title">Shopping Cart</h1>
+                    {/* some demo product */}
+                    <CheckoutProduct
+                        id="423456"
+                        title="USB Wall Charger, LUOATIP 3-Pack 2.1A/5V Dual Port USB Cube Power Adapter Charger Plug Charging Block Replacement for iPhone Xs/XR/X, 8/7/6 Plus, Samsung, LG, HTC, Moto, Android Phones"
+                        image="https://images-na.ssl-images-amazon.com/images/I/61RjldYuSEL._AC_SL1500_.jpg"
+                        price={12.99}
+                        rating={4}
+                    />
+
+                    <CheckoutProduct
+                        id="423456"
+                        title="USB Wall Charger, LUOATIP 3-Pack 2.1A/5V Dual Port USB Cube Power Adapter Charger Plug Charging Block Replacement for iPhone Xs/XR/X, 8/7/6 Plus, Samsung, LG, HTC, Moto, Android Phones"
+                        image="https://images-na.ssl-images-amazon.com/images/I/61RjldYuSEL._AC_SL1500_.jpg"
+                        price={12.99}
+                        rating={4}
+                    />
+                    {/* this push product from the data layer in the shopping cart dynamically when add to basket is pressed  */}
+                    {basket.map(item => (
+                        <CheckoutProduct
+                            id={item.id}
+                            title={item.title}
+                            image={item.image}
+                            price={item.price}
+                            rating={item.rating}
+                        />
+                    ))}
+
                 </div>
             </div>
 
