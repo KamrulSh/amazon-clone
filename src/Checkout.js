@@ -14,22 +14,7 @@ function Checkout() {
 
                 <div>
                     <h1 className="checkout__title">Shopping Cart</h1>
-                    {/* some demo product */}
-                    <CheckoutProduct
-                        id="423456"
-                        title="USB Wall Charger, LUOATIP 3-Pack 2.1A/5V Dual Port USB Cube Power Adapter Charger Plug Charging Block Replacement for iPhone Xs/XR/X, 8/7/6 Plus, Samsung, LG, HTC, Moto, Android Phones"
-                        image="https://images-na.ssl-images-amazon.com/images/I/61RjldYuSEL._AC_SL1500_.jpg"
-                        price={12.99}
-                        rating={4}
-                    />
 
-                    <CheckoutProduct
-                        id="423456"
-                        title="USB Wall Charger, LUOATIP 3-Pack 2.1A/5V Dual Port USB Cube Power Adapter Charger Plug Charging Block Replacement for iPhone Xs/XR/X, 8/7/6 Plus, Samsung, LG, HTC, Moto, Android Phones"
-                        image="https://images-na.ssl-images-amazon.com/images/I/61RjldYuSEL._AC_SL1500_.jpg"
-                        price={12.99}
-                        rating={4}
-                    />
                     {/* this push product from the data layer in the shopping cart dynamically when add to basket is pressed  */}
                     {basket.map(item => (
                         <CheckoutProduct
