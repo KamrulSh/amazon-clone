@@ -1,5 +1,6 @@
 export const initialState = {
-    basket: []
+    basket: [],
+    user: null
 }
 
 // selector for adding the item price
@@ -34,6 +35,12 @@ const reducer = (state, action) => {
         //     ...state,
         //     basket: state.basket.filter(item => item.id !== action.id)
         // }
+
+        case "SET_USER":
+            return {
+                ...state,
+                user: action.user
+            }
 
         default:
             return state;
