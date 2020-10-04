@@ -17,6 +17,9 @@ https://clone-react-d7b9d.web.app/
 ### `npm i firebase`
 ### `npm install -g firebase-tools`
 
+### stripe-js
+### `npm install @stripe/stripe-js`
+
 ### for deployment
 ### `firebase login`
 ### `firebase init`
