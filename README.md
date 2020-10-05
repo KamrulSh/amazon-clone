@@ -19,6 +19,10 @@ https://clone-react-d7b9d.web.app/
 
 ### stripe-js
 ### `npm install @stripe/stripe-js`
+### `npm install @stripe/react-stripe-js`
+
+### axios
+### `npm i axios`
 
 ### for deployment
 ### `firebase login`

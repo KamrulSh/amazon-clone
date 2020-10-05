@@ -2,7 +2,7 @@
     background-color: white;
 }
 
-.payment__container > h1 {
+.payment__container>h1 {
     text-align: center;
     padding: 10px;
     font-weight: 500;
@@ -10,7 +10,7 @@
     background-color: white;
 }
 
-.payment__container > h1 a {
+.payment__container>h1 a {
     text-decoration: none;
 }
 
@@ -25,7 +25,8 @@
     flex: 0.2;
 }
 
-.payment__address, .payment__items {
+.payment__address,
+.payment__items,
+.payment__details {
     flex: 0.8;
 }
-
