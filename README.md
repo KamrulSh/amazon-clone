@@ -30,8 +30,15 @@ https://clone-react-d7b9d.web.app/
 ### `npm run build`
 ### `firebase deploy`
 
+## For backend functionality:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `firebase init`
+Then choose the firebase functions and it installs complete npm server in the backend.
+
+### express, cors, stripe
+### `npm i express`
+### `npm i cors`
+### `npm i stripe`
 
 ## Available Scripts
 

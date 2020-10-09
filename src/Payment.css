@@ -30,3 +30,18 @@
 .payment__details {
     flex: 0.8;
 }
+
+.payment__details > form > div > button {
+    background: goldenrod;
+    border: 1px solid;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: black;
+}
+
+.payment__priceContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
