@@ -6,8 +6,8 @@
 
 .checkoutProduct__image {
     object-fit: contain;
-    width: 180px;
-    height: 180px;
+    max-width: 150px;
+    max-height: 150px;
 }
 
 .checkoutProduct__info {
